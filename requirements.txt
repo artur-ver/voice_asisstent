@@ -1,0 +1,6 @@
+SpeechRecognition
+pyttsx3
+pypiwin32
+requests
+sounddevice
+numpy
