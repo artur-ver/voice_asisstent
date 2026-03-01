@@ -35,6 +35,8 @@ async def main():
         if not should_listen_prompt:
             # Ожидание кодового слова
             if ww_detector.listen():
+                # Проигрываем приветствие после распознавания кодового слова
+                tts_client.play_system_sound("start_server.mp3")
                 should_listen_prompt = True
             else:
                 continue
